@@ -1,13 +1,21 @@
 #!/bin/bash
 echo "Arithmetic Computation & Sorting"
-read -p "Enter first input :" firstInput
-read -p "Enter second input:" secondInput
-read -p "Enter third input :" thirdInput
-result=$((firstInput+$secondInput*$thirdInput))
-echo "Result:" $result
-resultOne=$((firstInput*$secondInput+$thirdInput))
-echo "Result:" $resultOne
-resultTwo=$((thirdInput+$firstInput/$secondInput))
-echo "Result:" $resultTwo
-resultThree=$((firstInput%$secondInput+$thirdInput))
-echo "Result:" $resultThree
+echo $"Enter number a: "
+read a
+echo $"Enter number b: "
+read b
+echo $"Enter number c: "
+read c
+
+result1=$((a+b*c))
+echo $result1
+result2=$((a*b+c))
+echo $result2
+result3=$((c+a/b))
+echo $result3
+result4=$((a%b+c))
+echo $result4
+arithmaticOperation[result1]=$result1
+arithmaticOperation[result2]=$result2
+arithmaticOperation[result3]=$result3
+arithmaticOperation[result4]=$result4
