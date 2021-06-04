@@ -9,3 +9,5 @@ resultOne=$((firstInput*$secondInput+$thirdInput))
 echo "Result:" $resultOne
 resultTwo=$((thirdInput+$firstInput/$secondInput))
 echo "Result:" $resultTwo
+resultThree=$((firstInput%$secondInput+$thirdInput))
+echo "Result:" $resultThree
