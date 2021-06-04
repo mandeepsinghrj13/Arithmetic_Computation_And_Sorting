@@ -7,3 +7,5 @@ result=$((firstInput+$secondInput*$thirdInput))
 echo "Result:" $result
 resultOne=$((firstInput*$secondInput+$thirdInput))
 echo "Result:" $resultOne
+resultTwo=$((thirdInput+$firstInput/$secondInput))
+echo "Result:" $resultTwo
